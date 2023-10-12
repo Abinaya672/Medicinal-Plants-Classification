@@ -1,6 +1,18 @@
-html{
+/* For desktop view */
+html {
+  width: 100%;
+  max-width: 1520px;
+  margin: 0 auto;
   scroll-behavior: smooth;
 }
+
+/* For mobile view */
+@media (max-width: 768px) {
+  html {
+      max-width: 100%;
+  }
+}
+
 .desktop-1,
 .desktop-1 * {
   box-sizing: border-box;

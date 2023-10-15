@@ -3,69 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+  
 
 <!-- =====BOX ICONS===== -->
 <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
 <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <title>Document</title>
+    <title>Medicinal-Plants-Classification</title>
    
   </head>
   <body>
 
     <div class="desktop-1">
-      <div class="ellipse-1"></div>
-      <div class="ellipse-2"></div>
-      <div class="ellipse-4"></div>
-     
-      <div class="ellipse-5"></div>
-      <div class="ellipse-6"></div>
-      <div class="ellipse-7"></div>
-      <div class="ellipse-8"></div>
-      <div class="ellipse-3"></div>
-      <div class="fade-in-right">
-      <div class="medicinal-plants-classification">
-        MEDICINAL PLANTS<br />CLASSIFICATION <br>
-        <h2 style="color: green; font-size: x-large; font-weight: bold; padding-left: 200px;">Click here to identify a plant</h2>
-       <div style="padding-left: 280px;">
-       <button style=" font-weight: bold;
-        font-size: medium;
-        padding: 15px 25px;
-        border-radius: 30px;
-        color: azure;
-        background-color: rgb(16, 111, 12);"; onclick="document.location='/classify'" target="_self">Identify</button></div>
+      <div class="fade-in-left">
+        <h1>Medicinal Plants Classification</h1>
+        <h2>Click here to identify a plant</h2>
+      <center>   <button style="font-weight: bold;
+          font-size: medium;
+          padding: 15px 25px;
+          border-radius: 30px;
+          color: azure;
+          background-color: rgb(16, 111, 12);"; onclick="document.location='/classify'" target="_self">Identify</button></div>
+</center>
       </div>
-      </div>
+      <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="/static/logo.png" alt="logo">
+                <h2 href="https://ayush.gov.in">Ministry Of Ayush </h2>
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#">Home</a></li>
+                <li><a href="#images">Gallery</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
 
-    </div>
    
-      <img
-        class="fade-in-left"
-        src="/static/Daco_4896111.png"
-      />
-      <div class="rectangle-1">
-            
-    <header>
-      <nav class="navbar">
-          <span class="hamburger-btn material-symbols-rounded">menu</span>
-          <a href="https://ayush.gov.in" class="logo">
-              <img src="/static/logo.png" alt="">
-              <h2>Ministry of Ayush</h2>
-              
-          </a>
-          <ul class="links">
-              <span class="close-btn material-symbols-rounded">close</span>
-              <li><a href="/">Home</a></li>
-              <li><a href="#images">Gallery</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="">Feedback</a></li>
-              <li><a href="#contact">Contact us</a></li>
-          </ul>
-          <button class="login-btn">LOG IN</button>
-      </nav>
-  </header>
-      </div>
+      <div class="rectangle-1"></div>
+     
+      
+      <div id="login-form">
       <div class="blur-bg-overlay"></div>
       <div class="form-popup">
           <span class="close-btn material-symbols-rounded">close</span>
@@ -127,95 +114,33 @@
           </div>
       </div>
       </div>
+    </div>
       <div id="about">
       <div class="desktop-2">
-        <img class="image-1" src="/static/medplant.jpg" />
-        <div class="rectangle-2"></div>
-        <svg
-          class="polygon-1"
-          width="1427"
-          height="439"
-          viewBox="0 0 1427 439"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1410.82 293.676L350.912 307.25L377.67 56.6306L1410.82 293.676Z"
-            fill="#F5F5F5"
-          />
-        </svg>
-  
-        <svg
-          class="group-1"
-          width="519"
-          height="116"
-          viewBox="0 0 519 116"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1.48798 10.2948L464.477 7.05917L465.036 87.0572L2.04705 90.2928L1.48798 10.2948Z"
-            fill="#F5F5F5"
-          />
-          <path
-            d="M465.459 8.59681L509.881 86.5822L423.437 87.9013L465.459 8.59681Z"
-            fill="#F5F5F5"
-          />
-        </svg>
-  
-        <div class="about-us">About us</div>
-        <div class="group-2">
-          <div
-            class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures"
-          >
-            <span
-              ><span
-                class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span"
-                ><br /></span
-              ><span
-                class="welcome-to-our-project-dedicated-to-the-exciting-field-of-medicinal-plant-classification-through-image-processing-and-machine-learning-algorithms-we-are-a-passionate-team-of-researchers-and-developers-who-share-a-common-goal-to-harness-the-power-of-technology-to-improve-our-understanding-and-utilization-of-nature-s-medicinal-treasures-span2"
-                >Welcome to our project dedicated to the exciting field of
-                medicinal plant classification through image processing and
-                machine learning algorithms. We are a passionate team of
-                researchers and developers who share a common goal - to harness
-                the power of technology to improve our understanding and
-                utilization of nature&#039;s medicinal treasures.</span
-              ></span
-            >
-          </div>
-          <div
-            class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research"
-          >
-            <span
-              ><span
-                class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span"
-                ><br /><br /><br /></span
-              ><span
-                class="our-mission-our-mission-is-simple-yet-profound-to-contribute-to-the-field-of-medicinal-plant-identification-and-classification-through-cutting-edge-technology-we-believe-that-by-combining-the-knowledge-of-traditional-herbal-medicine-with-modern-computational-techniques-we-can-unlock-new-possibilities-for-healthcare-conservation-and-scientific-research-span2"
-                ><br>Our Mission<br /><br />Our mission is simple yet profound: to
-                contribute to the field of medicinal plant identification and
-                classification through cutting-edge technology. We believe that by
-                combining the knowledge of traditional herbal medicine with modern
-                computational techniques, we can unlock new possibilities for
-                healthcare, conservation, and scientific research.</span
-              ></span
-            >
-          </div>
-          <div
-            class="why-medicinal-plants-medicinal-plants-have-been-a-vital-source-of-healing-and-wellness-for-centuries-they-offer-a-wealth-of-bioactive-compounds-that-have-the-potential-to-treat-various-ailments-and-improve-human-health-by-accurately-identifying-and-cataloging-these-plants-we-can-facilitate-research-promote-conservation-efforts-and-enhance-the-development-of-herbal-medicines"
-          >
-           <br><br> Why Medicinal Plants?<br /><br />Medicinal plants have been a vital
-            source of healing and wellness for centuries. They offer a wealth of
-            bioactive compounds that have the potential to treat various ailments
-            and improve human health. By accurately identifying and cataloging
-            these plants, we can facilitate research, promote conservation
-            efforts, and enhance the development of herbal medicines
-          </div>
+        <div class="abi-us" style="height: 5rem; width: 40%; background-color: rgb(219, 215, 98);">
+<center><h1>About us</h1></center></div>
+<div class="topic">
+  <h2><br>Our Mission</h2>
+  <p><br>Our mission is to bridge the gap between traditional knowledge of medicinal plants
+    and modern technology.By doing so ,we hope to contribute to the conservation and 
+    sustainable use of these valuable natural resources.
+  </p>
+  <h2><br>Why Medicinal plants?
+  </h2>
+  <p><br>Medicinal plants have been used for centuries to treat various ailments,
+    and they continue to play a crucial role in global healthcare.Our project recognizes
+    the importance of these natural resources and strives to ensure their preservation
+    and responsible utilization.
+  </p>
+  <p><br>Thankyou for visiting our "About us" page, and we look
+  forward to making a meaningful contribution to the field of medicinal plants and 
+raw materials classification.</p>
+</div>
         </div>
-      </div>
-    </div>
+  </div>
 
-    <div style="background-color: rgb(182, 218, 181);">
+
+    <div style="width: 100%; background-color: rgb(182, 218, 181);">
       <h1 style="color:rgb(2, 49, 2)">PLANTS TO KEEP IN OUR HOME</h1>
    
     </div>   
@@ -344,7 +269,7 @@
   </div>
 </div>
     <section class="contact section" id="contact">
-      <h2 class="section-title">Contact us</h2>
+      <center><h2 class="section-title">Contact us</h2></center>
 
       <div class="contact__container bd-grid">
           <form action="https://formspree.io/f/xzblerag" method="post" class="contact__form">
@@ -402,6 +327,8 @@ signupLoginLink.forEach(link => {
         formPopup.classList[link.id === 'signup-link' ? 'add' : 'remove']("show-signup");
     });
 });
+
     </script>
+
   </body>
 </html>
